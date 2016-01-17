@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	  <title>{%= o.htmlWebpackPlugin.options.title || o.htmlWebpackPlugin.options.pkg.name || 'SiteSnap App'%}</title>
+
+	  {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+	  <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+	  {% } %}
+
+  </head>
+
+  <body>
+
+    <ion-nav-view></ion-nav-view>
+
+    {% { %}
+    <script src="{%=o.htmlWebpackPlugin.files.chunks['vendor'].entry %}"></script>
+    <script src="{%=o.htmlWebpackPlugin.files.chunks['app'].entry %}"></script>
+    {% } %}
+
+  </body>
+</html>

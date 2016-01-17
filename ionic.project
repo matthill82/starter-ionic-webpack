@@ -1,0 +1,7 @@
+{
+  "name": "starter-webpack",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "watch"
+  ]
+}
