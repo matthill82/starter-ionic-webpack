@@ -12,7 +12,8 @@
     "stage": "env webpack-dev-server --progress --colors --release=stage",
     "prod":  "env webpack-dev-server --progress --colors --release=production",
     "test": "node node_modules/eslint/bin/eslint.js -c .eslintrc ./app",
-    "docs": "rm -rf ./docs && cp ./app/STYLE.md ./www/index.md && hologram",
+    "style-docs": "rm -rf ./docs && cp ./app/STYLE.md ./www/index.md && hologram",
+    "js-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
     "code": "esdoc -c ./esdoc.json"
   },
   "devDependencies": {
@@ -39,8 +40,10 @@
     "file-loader": "^0.8.5",
     "gulp": "^3.9.0",
     "gulp-util": "^3.0.7",
+    "gulp-hologram": "^1.0.1",
     "html-loader": "^0.4.0",
     "html-webpack-plugin": "^1.7.0",
+    "jsdoc" : "^3.4.0",
     "jshint": "^2.8.0",
     "jshint-loader": "~0.8.3",
     "json-loader": "^0.5.4",
@@ -53,6 +56,7 @@
     "karma-spec-reporter": "0.0.23",
     "karma-webpack": "^1.7.0",
     "lodash": "^3.10.1",
+    "minami" : "^1.1.0",
     "node-bourbon": "~4.2.2",
     "node-sass": "^3.4.2",
     "open": "0.0.5",

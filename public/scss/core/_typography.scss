@@ -1,3 +1,18 @@
+/*doc
+---
+title: Typography
+name: typography
+category: typography css
+---
+
+typography styles can be applied to any element. Typically you'll want
+to use either a `<header>`, `<span>`, `<p>` element:
+
+```html_example <h1 class="h1">This is an example header</h1>
+<h2 class="h2">This is an example subheader</h2> ```
+
+*/
+
 // Headings, Text Sizes
 h1,
 .h1 {

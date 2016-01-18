@@ -3,6 +3,7 @@
 /**
  * Module dependencies
  */
+
 var path              = require( 'path' ),
     webpack           = require( 'webpack' ),
     HtmlWebpackPlugin = require( 'html-webpack-plugin' ),
@@ -13,7 +14,7 @@ var path              = require( 'path' ),
 
 // Delcare some PATHS to make it all easier
 var PATHS = {
-	app        : path.join( __dirname, '/app' ),
+	app        : path.join(__dirname, '/app'),
 	bower      : path.join( __dirname, 'public/bower_components/' ),
 	nodeModules: path.join( __dirname, 'node_modules' ),
 	scssFolder : path.join( __dirname, 'public/scss' ),
@@ -83,13 +84,13 @@ module.exports = {
 			loader: 'file-loader?name=fonts/[name].[hash].[ext]'
 		}, {
 			test: /\.gif/,
-			loader: 'url-loader?limit=15&mimetype=image/gif&name=images/orphans/[hash].[ext]'
+			loader: 'url-loader?limit=15&mimetype=image/gif&name=images/[hash].[ext]'
 		}, {
 			test: /\.jpg/,
-			loader: 'url-loader?limit=15&mimetype=image/gif&name=images/orphans/[hash].[ext]'
+			loader: 'url-loader?limit=15&mimetype=image/gif&name=images/[hash].[ext]'
 		}, {
 			test: /\.png/,
-			loader: 'url-loader?limit=15&mimetype=image/png&name=images/orphans/[hash].[ext]'
+			loader: 'url-loader?limit=15&mimetype=image/png&name=images/[hash].[ext]'
 		},  {
 			test  : /\.svg/,
 			loader: 'file?prefix=font/'

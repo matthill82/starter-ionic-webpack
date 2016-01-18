@@ -9,6 +9,7 @@ var gulp           = require('gulp'),
     path             = require('path'),
     del              = require('del'),
     open             = require('open'),
+    hologram         = require('gulp-hologram'),
     webpack          = require('webpack'),
     WebpackDevServer = require('webpack-dev-server'),
     webpackConfig    = require('./webpack.config.js');
@@ -68,6 +69,11 @@ gulp.task('clean-all', function (cb) {
 	}, cb);
 });
 
+gulp.task('hologram', function() {
+	gulp.src('hologram_config.yml')
+		.pipe(hologram({logging:true}));
+});
+
 gulp.task('install', ['webpack']);
-gulp.task('watch', ['webpack-dev-server']);
+gulp.task('watch', ['webpack-dev-server', 'hologram']);
 gulp.task('default', ['install']);
