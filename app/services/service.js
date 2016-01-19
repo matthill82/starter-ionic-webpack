@@ -1,9 +1,12 @@
 /**
- * recommended
- * Using function declarations
- * and accessible members up top.
+ * @ngdoc service
+ * @name DataService
+ * @function
+ *
+ * @description
+ * Gets the feed data from a data service
+ *
  */
-
     function DataService ($http, $q, $timeout) {
 
 	let service = {
@@ -22,8 +25,8 @@
 			}
 		};
 
-		var vm = this;
-		var deferred = $q.defer();
+		let vm = this;
+		let deferred = $q.defer();
 
 		vm.data = {
 			isLoading: false
@@ -38,13 +41,12 @@
 			} )
 			.error( function (status, error) {
 				console.log( "Error while making HTTP call" + "Status is: " + status + "The error was: " + error );
-				//vm.loadingIndicator.hide();
+				vm.loadingIndicator.hide();
 				deferred.reject();
 			} );
 
 		return deferred.promise;
 	}
-
 }
 
 DataService.$inject = ["$http", "$q", "$timeout"];
