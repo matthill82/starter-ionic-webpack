@@ -74,6 +74,13 @@ gulp.task('hologram', function() {
 		.pipe(hologram({logging:true}));
 });
 
+gulp.task('ngdocs', [], function () {
+	var gulpDocs = require('gulp-ngdocs');
+	return gulp.src('./app/bootstrap.js')
+		.pipe(gulpDocs.process())
+		.pipe(gulp.dest('./docs/ngdocs'));
+});
+
 gulp.task('install', ['webpack']);
 gulp.task('watch', ['webpack-dev-server', 'hologram']);
 gulp.task('default', ['install']);

@@ -1,7 +1,10 @@
 'use strict';
 
 /**
- * bootstrap module, handles imports of modules
+ * @ngdoc controller
+ * @name dashboard.controller:ControllerName
+ * @description
+ * A description of the controller, service or filter
  */
 
 import appModule from './app.module';

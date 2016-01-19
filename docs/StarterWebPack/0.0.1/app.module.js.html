@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>features/photos/photo.controller.js - Documentation</title>
+    <title>app.module.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -28,7 +28,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">features/photos/photo.controller.js</h1>
+    <h1 class="page-title">app.module.js</h1>
     
 
     
@@ -38,26 +38,60 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * Created by matthewhill on 12/01/2016.
+            <pre class="prettyprint source linenums"><code>'use strict';
+
+/**
+ * Load import Modules.
+ * @constructor
  */
+import home from './features/home/home.module'
+import form from './features/forms/form.module'
+import photo from './features/photos/photo.module'
 
-function PhotoController () {
 
-	var vm = this;
-	
-	vm.submitPhoto = function (isvalid) {
-		if(isvalid) {
-			alert('our Photo is amazing');
-		} else  {
-			alert('our Photo is not amazing');
-		}
-	}
-}
+/**
+ * Load Configs
+ * @constructor
+ */
+import appRoutes from './core/app.routes';
 
-PhotoController.$inject = ['$scope'];
+/**
+ * Load route states, and main config function
+ * @constructor
+ */
+import { StateChangeStart, StateChangeSuccess, StateNotFound, StateChangeError } from './core/app.states';
+import appRoot from './core/app.root';
 
-export default PhotoController
+
+/**
+ * Load Route Controller module
+ * @constructor
+ */
+import appController from './core/app.controller';
+
+/**
+ * Main App module constructor
+ * @constructor
+ * @param {array} - The main dependencies of the app.
+ */
+export default angular.module( 'siteSnap', [
+	'ionic',
+	home.name,
+	form.name,
+	photo.name
+])
+
+	.config( appRoutes )
+
+	// Add State Management
+	.run( StateChangeStart )
+	.run( StateChangeSuccess )
+	.run( StateNotFound )
+	.run( StateChangeError )
+	.run( appRoot )
+
+	// Add the default app controller
+	.controller( 'AppController', appController );
 </code></pre>
         </article>
     </section>

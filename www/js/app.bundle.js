@@ -54,7 +54,10 @@
 	'use strict';
 
 	/**
-	 * bootstrap module, handles imports of modules
+	 * @ngdoc controller
+	 * @name dashboard.controller:ControllerName
+	 * @description
+	 * A description of the controller, service or filter
 	 */
 
 	var _app = __webpack_require__(2);
@@ -76,18 +79,15 @@
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/**
-	 * Created by user2 on 11/01/16.
-	 */
-
 	'use strict';
 
 	/**
-	 * Load Modules
+	 * Load import Modules.
+	 * @constructor
 	 */
 
 	Object.defineProperty(exports, "__esModule", {
-		value: true
+	  value: true
 	});
 
 	var _home = __webpack_require__(3);
@@ -119,7 +119,14 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	/**
+	 * Main App module constructor
+	 * @constructor
+	 * @param {array} - The main dependencies of the app.
+	 */
+
+	/**
 	 * Load Configs
+	 * @constructor
 	 */
 	exports.default = angular.module('siteSnap', ['ionic', _home2.default.name, _form2.default.name, _photo2.default.name]).config(_app2.default)
 
@@ -130,11 +137,13 @@
 	.controller('AppController', _app7.default);
 
 	/**
-	 * Load Route Controller
+	 * Load Route Controller module
+	 * @constructor
 	 */
 
 	/**
-	 * Load Runs
+	 * Load route states, and main config function
+	 * @object
 	 */
 
 /***/ },
@@ -605,21 +614,21 @@
 /***/ function(module, exports) {
 
 	module.exports = {
-		"name": "StarterWebPack",
+		"name": "WebPackSideMenu",
 		"version": "0.0.1",
-		"description": "starter webpack app",
+		"description": "starter webpack sidemenu app",
 		"main": "app.module.js",
 		"scripts": {
 			"install": "./node_modules/.bin/bower install && ./node_modules/.bin/gulp",
 			"start": "env UV_THREADPOOL_SIZE=100 webpack --progress --colors --watch",
 			"analyse": "env webpack-dev-server --progress --colors --watch --display-modules --display-chunks --display-reasons --release=dev",
-			"start_win": "webpack --progress --colors --watch",
-			"dev": "env webpack-dev-server --content-base www/ --inline --release=dev",
-			"stage": "env webpack-dev-server --progress --colors --release=stage",
-			"prod": "env webpack-dev-server --progress --colors --release=production",
-			"test": "node node_modules/eslint/bin/eslint.js -c .eslintrc ./app",
-			"docs": "rm -rf ./docs && cp ./app/STYLE.md ./www/index.md && hologram",
-			"code": "esdoc -c ./esdoc.json"
+			"dev": "NODE_ENV=dev webpack-dev-server --content-base www/ --inline --release=dev",
+			"stage": "NODE_ENV=stage webpack-dev-server --progress --colors --release=stage",
+			"prod": "NODE_ENV=production webpack-dev-server --progress --colors --release=production",
+			"es6-test": "node node_modules/eslint/bin/eslint.js -c .eslintrc ./app",
+			"js-test": "node node_modules/jshint/dist/jshint.js --verbose ./app",
+			"style-docs": "rm -rf ./docs && cp ./app/STYLE.md ./www/index.md && hologram",
+			"js-docs": "rm -rf ./docs && node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
 		},
 		"devDependencies": {
 			"angular": "~1.4.3",
@@ -646,8 +655,10 @@
 			"gulp": "^3.9.0",
 			"gulp-util": "^3.0.7",
 			"gulp-hologram": "^1.0.1",
+			"gulp-ngdocs": "0.2.13",
 			"html-loader": "^0.4.0",
 			"html-webpack-plugin": "^1.7.0",
+			"jsdoc": "^3.4.0",
 			"jshint": "^2.8.0",
 			"jshint-loader": "~0.8.3",
 			"json-loader": "^0.5.4",
@@ -660,6 +671,7 @@
 			"karma-spec-reporter": "0.0.23",
 			"karma-webpack": "^1.7.0",
 			"lodash": "^3.10.1",
+			"minami": "^1.1.0",
 			"node-bourbon": "~4.2.2",
 			"node-sass": "^3.4.2",
 			"open": "0.0.5",
