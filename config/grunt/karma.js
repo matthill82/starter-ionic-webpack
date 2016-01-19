@@ -3,33 +3,33 @@ module.exports = function (grunt, options) {
         options: {
             // list of files / patterns to load in the browser
             files: [
-                'public/vendor/bower/angular/angular.js',
-                'public/vendor/bower/angular-mocks/angular-mocks.js',
-                'public/vendor/bower/angular-ui-router/release/angular-ui-router.js',
-                'public/vendor/bower/angular-sanitize/angular-sanitize.js',
-                'public/vendor/bower/angular-cookies/angular-cookies.js',
-                'public/vendor/bower/angular-inview/angular-inview.js',
-                'public/vendor/bower/angulartics/src/angulartics.js',
-                'public/vendor/bower/angulartics/src/angulartics-kissmetrics.js',
-                'public/vendor/bower/angulartics/src/angulartics-gtm.js',
-                'public/vendor/bower/angular-animate/angular-animate.js',
+                'public/vendor/bower_components/angular/angular.js',
+                'public/vendor/bower_components/angular-mocks/angular-mocks.js',
+                'public/vendor/bower_components/angular-ui-router/release/angular-ui-router.js',
+                'public/vendor/bower_components/angular-sanitize/angular-sanitize.js',
+                'public/vendor/bower_components/angular-cookies/angular-cookies.js',
+                'public/vendor/bower_components/angular-inview/angular-inview.js',
+                'public/vendor/bower_components/angulartics/src/angulartics.js',
+                'public/vendor/bower_components/angulartics/src/angulartics-kissmetrics.js',
+                'public/vendor/bower_components/angulartics/src/angulartics-gtm.js',
+                'public/vendor/bower_components/angular-animate/angular-animate.js',
                 'app/app.module.js',
                 'app/**/*.module.js',
                 'app/*.js',
                 'app/**/*.factory.js',
                 'app/**/*.js',
                 'app/*.spec.js',
-                'dist/views/*.html',
-                'dist/partials/*.html'
+                'www/views/*.html',
+                'www/partials/*.html'
             ],
             singleRun: true,
             preprocessors: {
-                'dist/views/*.html': 'ng-html2js',
-                'dist/partials/*.html': 'ng-html2js',
+                'www/views/*.html': 'ng-html2js',
+                'www/partials/*.html': 'ng-html2js',
                 'app/**/!(*spec|*mock).js': ['coverage']
             },
             ngHtml2JsPreprocessor: {
-                stripPrefix: 'dist/'
+                stripPrefix: 'www/'
             },
             port: 9998,
             runnerPort: 9999,

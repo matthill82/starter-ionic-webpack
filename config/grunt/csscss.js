@@ -5,7 +5,7 @@ module.exports = function (grunt, options) {
             verbose: true
         },
         dist: {
-            src: ['dist/assets/css/app.css']
+            src: ['www/css/app.css']
         }
     }
 };

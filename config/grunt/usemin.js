@@ -1,4 +1,4 @@
 module.exports = {
-    html: 'dist/index.html'
+    html: 'www/index.html'
 };
 

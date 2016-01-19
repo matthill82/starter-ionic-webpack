@@ -6,7 +6,7 @@ module.exports = function(grunt, options) {
 
         html: ['app/index.html'],
         options: {
-            dest: 'dist',
+            dest: 'www',
             flow: {
                 steps: {
                     js: [flowSteps]
