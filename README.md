@@ -47,3 +47,22 @@ Running in the emulator
 ```bash
 $ cordova emulate ios
 ```
+
+
+Installing another dependency
+```bash
+$ bower install [package] --save
+
+Then update webpackage.config
+
+    vendor: [
+        PATHS.bower + 'ionic/js/ionic.bundle',
+        Paths.bower + 'new package that you've installed
+    ],
+    
+```
+
+
+
+
+

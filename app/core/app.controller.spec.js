@@ -2,9 +2,9 @@
  * Created by matthewhill on 12/01/2016.
  */
 
-import home from './index'
+import home from "./index"
 
-describe('HomeController', function () {
+describe("HomeController", function () {
 	var scope, ctrl;
 
 	beforeEach(inject( function ($controller, $rootScope) {
@@ -12,8 +12,8 @@ describe('HomeController', function () {
 		ctrl = $controller(HomeController, { $scope: scope });
 	}));
 
-	it('should change the title on load', function () {
-		scope.title = 'Home';
+	it("should change the title on load", function () {
+		scope.title = "Home";
 		scope.$digest();
 		expect(scope.title).toBe("Home");
 	})

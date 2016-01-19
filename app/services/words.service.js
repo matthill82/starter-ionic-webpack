@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-import angular from 'angular';
+import angular from "angular";
 
 class Words {
   constructor($http) {
@@ -8,12 +8,12 @@ class Words {
   }
 
   getWords() {
-    return this.$http.get('http://localhost:3001/api/random-word');
+    return this.$http.get("http://localhost:3001/api/random-word");
   }
 }
 
-Words.$inject = ['$http'];
+Words.$inject = ["$http"];
 
-export default angular.module('services.words', [])
-  .service('words', Words)
+export default angular.module("services.words", [])
+  .service("words", Words)
   .name;

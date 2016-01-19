@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * @ngdoc function
@@ -11,8 +11,9 @@
 function AppController($rootScope) {
     $rootScope.RELEASE = {};
     $rootScope.pulled = false;
-	console.log('app controller booting up.....')
+	console.log("app controller booting up.....")
 
 }
 
+AppController.$inject = ["$rootScope"];
 export default AppController;

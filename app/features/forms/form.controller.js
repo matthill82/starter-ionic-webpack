@@ -2,19 +2,11 @@
  * Created by matthewhill on 12/01/2016.
  */
 
+/*@ngInject*/
 function FormController () {
 
 	var vm = this;
-	
-	vm.submitForm = function (isvalid) {
-		if(isvalid) {
-			alert('our form is amazing');
-		} else  {
-			alert('our form is not amazing');
-		}
-	}
+	vm.navTitle = "Forms View";
 }
 
-FormController.$inject = ['$scope'];
-
-export default FormController
+export default FormController;

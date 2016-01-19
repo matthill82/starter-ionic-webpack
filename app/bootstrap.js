@@ -1,20 +1,13 @@
-'use strict';
+"use strict";
 
-/**
- * @ngdoc controller
- * @name dashboard.controller:ControllerName
- * @description
- * A description of the controller, service or filter
- */
+/** import some styles */
+import "../public/scss/app.scss";
 
-import appModule from './app.module';
-import '../public/scss/app.scss';
+/** import the main app module */
+import { default as siteSnap } from "./app.module";
 
-appModule.constant( 'version', require( '../package.json' ).version );
-appModule.constant( 'config', require( './app.config' ) );
-
+/** bootstrap the application into the document */
 angular.element(document).ready(function() {
-    angular.bootstrap(document, [appModule.name]);
+    angular.bootstrap(document, [siteSnap]);
 });
-
 

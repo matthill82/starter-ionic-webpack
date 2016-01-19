@@ -43,6 +43,6 @@
     "no-undefined" : 0,
     "no-undef" : 0,
     "no-console": 0,
-    "quotes": [2, "single"]
+    "quotes": [2, "double"]
   }
 }

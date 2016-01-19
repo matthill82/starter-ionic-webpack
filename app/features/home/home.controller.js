@@ -6,21 +6,19 @@ function HomeController () {
 
 	var vm = this;
 
+	vm.navTitle = "Saved Sketches";
+
 	vm.shouldShowDelete = false;
 	vm.shouldShowReorder = false;
 	vm.listCanSwipe = true;
 
-	vm.navTitle = 'Saved Sketches';
-
 	vm.rightButtons = [{
-		type: 'button button-icon icon ion-ios-minus-outline',
-		content: 'Delete',
+		type: "button button-icon icon ion-ios-minus-outline",
+		content: "Delete",
 		tap: function () {
 			vm.shouldShowDelete = !vm.shouldShowDelete;
 		}
 	}];
 }
-
-HomeController.$inject = ['$scope'];
 
 export default HomeController;

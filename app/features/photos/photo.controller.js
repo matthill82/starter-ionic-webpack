@@ -5,16 +5,8 @@
 function PhotoController () {
 
 	var vm = this;
-	
-	vm.submitPhoto = function (isvalid) {
-		if(isvalid) {
-			alert('our Photo is amazing');
-		} else  {
-			alert('our Photo is not amazing');
-		}
-	}
+	vm.navTitle = "Hello World";
+
 }
 
-PhotoController.$inject = ['$scope'];
-
-export default PhotoController
+export default PhotoController;

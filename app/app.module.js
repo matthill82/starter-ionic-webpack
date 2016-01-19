@@ -1,53 +1,49 @@
-'use strict';
+"use strict";
 
-/**
- * Load import Modules.
- * @constructor
- */
-import home from './features/home/home.module'
-import form from './features/forms/form.module'
-import photo from './features/photos/photo.module'
+/** Load import Modules. */
+import { default as homeModule } from "./features/home/home.module";
+import { default as formsModule } from "./features/forms/form.module";
+import { default as photosModule } from "./features/photos/photo.module.js";
 
+/** Load app routes */
+import appRoutes from "./core/app.routes";
 
-/**
- * Load Configs
- * @constructor
- */
-import appRoutes from './core/app.routes';
-
-/**
- * Load route states, and main config function
- * @object
- */
-import { StateChangeStart, StateChangeSuccess, StateNotFound, StateChangeError } from './core/app.states';
-import appRoot from './core/app.root';
+/** Load route states, and main config function */
+import { StateChangeStart, StateChangeSuccess, StateNotFound, StateChangeError } from "./core/app.states";
+import AppRun from "./core/app.run";
 
 
-/**
- * Load Route Controller module
- * @constructor
- */
-import appController from './core/app.controller';
+/** Load Route Controller module */
+import AppController from "./core/app.controller";
 
-/**
- * Main App module constructor
- * @constructor
- * @param {array} - The main dependencies of the app.
- */
-export default angular.module( 'siteSnap', [
-	'ionic',
-	home.name,
-	form.name,
-	photo.name
+/** Main App module variable */
+let moduleName = "siteSnap";
+
+/** Main App module setter with module name injected */
+angular.module(moduleName, [
+	"ionic",
+	homeModule,
+	formsModule,
+	photosModule
 ])
+	/** Define default routes of the app */
 	.config( appRoutes )
 
-	// Add State Management
+	/** Add constants, holding version info and any configs */
+	.constant( "version", require( "../package.json" ).version )
+	.constant( "config", require( "./app.config" ) )
+
+	/** Add State Management */
 	.run( StateChangeStart )
 	.run( StateChangeSuccess )
 	.run( StateNotFound )
 	.run( StateChangeError )
-	.run( appRoot )
 
-	// Add the default app controller
-	.controller( 'AppController', appController );
+	/** pass import to the run function */
+	.run( AppRun )
+
+	/** Add the default app controller */
+	.controller( "AppController", AppController );
+
+/** Main App export, this makes the module available */
+export default moduleName

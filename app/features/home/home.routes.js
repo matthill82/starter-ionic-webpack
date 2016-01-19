@@ -1,20 +1,21 @@
 /**
  * Created by matthewhill on 12/01/2016.
  */
-'use strict';
-
-routeConfig.$inject = ['$stateProvider'];
+"use strict";
 
 function routeConfig($stateProvider) {
 	$stateProvider
-		.state('app.sketches', {
-			url: '/sketches',
+		.state("app.sketches", {
+			url: "/sketches",
 			views: {
-				'menuContent': {
-					template: require('./home.html')
+				"menuContent": {
+					template: require("./home.html")
 				}
-			}
+			},
+			controller: "HomeController",
+			controllerAs:"vm"
 		});
 }
 
+routeConfig.$inject = ["$stateProvider"];
 export default routeConfig;

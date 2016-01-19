@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-StateChangeStart.$inject = ['$log', '$rootScope', '$ionicBackdrop', '$timeout'];
+StateChangeStart.$inject = ["$log", "$rootScope", "$ionicBackdrop", "$timeout"];
 
 function StateChangeStart($log, $rootScope, $ionicBackdrop, $timeout) {
 
-	$log.debug( 'app module - run' );
+	$log.debug( "app module - run" );
 
-	$rootScope.$on( '$stateChangeStart',
+	$rootScope.$on( "$stateChangeStart",
 		function (event, toState) {
-			$log.debug( '$stateChangeStart - name:', toState.name );
+			$log.debug( "$stateChangeStart - name:", toState.name );
 		} );
 
 	$ionicBackdrop.retain();
@@ -18,12 +18,12 @@ function StateChangeStart($log, $rootScope, $ionicBackdrop, $timeout) {
 	}, 600 );
 }
 
-StateChangeSuccess.$inject = ['$log', '$rootScope', '$ionicBackdrop', '$timeout'];
+StateChangeSuccess.$inject = ["$log", "$rootScope", "$ionicBackdrop", "$timeout"];
 
 function StateChangeSuccess($log, $rootScope, $ionicBackdrop, $timeout) {
-	$rootScope.$on( '$stateChangeSuccess',
+	$rootScope.$on( "$stateChangeSuccess",
 		function (event, toState) {
-			$log.debug( '$stateChangeSuccess - name:', toState.name );
+			$log.debug( "$stateChangeSuccess - name:", toState.name );
 		} );
 
 	$ionicBackdrop.retain();
@@ -33,13 +33,13 @@ function StateChangeSuccess($log, $rootScope, $ionicBackdrop, $timeout) {
 	}, 600 );
 }
 
-StateNotFound.$inject = ['$log', '$rootScope', '$ionicBackdrop', '$timeout'];
+StateNotFound.$inject = ["$log", "$rootScope", "$ionicBackdrop", "$timeout"];
 
 function StateNotFound($log, $rootScope, $ionicBackdrop, $timeout) {
 
-	$rootScope.$on( '$stateNotFound',
+	$rootScope.$on( "$stateNotFound",
 		function (event, unfoundState, fromState, fromParams) {
-			$log.warn( '$stateNotFound', {
+			$log.warn( "$stateNotFound", {
 				event       : event,
 				unfoundState: unfoundState,
 				fromState   : fromState,
@@ -54,13 +54,13 @@ function StateNotFound($log, $rootScope, $ionicBackdrop, $timeout) {
 	}, 600 );
 }
 
-StateChangeError.$inject = ['$log', '$rootScope', '$ionicBackdrop', '$timeout'];
+StateChangeError.$inject = ["$log", "$rootScope", "$ionicBackdrop", "$timeout"];
 
 function StateChangeError($log, $rootScope, $ionicBackdrop, $timeout) {
 
-	$rootScope.$on( '$stateChangeError',
+	$rootScope.$on( "$stateChangeError",
 		function (event, toState, toParams, fromState, fromParams, error) {
-			$log.error( '$stateChangeError', {
+			$log.error( "$stateChangeError", {
 				event     : event,
 				toState   : toState,
 				toParams  : toParams,
