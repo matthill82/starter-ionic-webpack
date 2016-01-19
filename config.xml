@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget
-  id="com.matthill82.starterwebpack"
+  id="com.matthill82.starterwebpacksidemenu"
   version="0.0.1"
   xmlns="http://www.w3.org/ns/widgets"
   xmlns:cdv="http://cordova.apache.org/ns/1.0">`
-  <name>StarterWebPack</name>
+  <name>starter-webpack-sidemenu</name>
   <description>
     An Ionic Framework and Cordova project.
   </description>

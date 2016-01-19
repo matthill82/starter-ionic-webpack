@@ -15,6 +15,7 @@ Install the dependencies
 
 ```bash
 $ npm install
+$ bower install
 ```
 
 Watch Mode (this will run the webpack dev server)

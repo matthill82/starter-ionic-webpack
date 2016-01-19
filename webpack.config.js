@@ -17,13 +17,7 @@ var PATHS = {
 	app        : path.join(__dirname, '/app'),
 	bower      : path.join( __dirname, 'public/bower_components/' ),
 	nodeModules: path.join( __dirname, 'node_modules' ),
-	scssFolder : path.join( __dirname, 'public/scss' ),
-	components : path.join( __dirname, '/app/components' ),
-	factory    : path.join( __dirname, '/app/factory' ),
-	constants  : path.join( __dirname, '/app/constants' ),
-	service    : path.join( __dirname, '/app/service' ),
-	filter     : path.join( __dirname, '/app/filter' ),
-	validators : path.join( __dirname, '/app/validators' )
+	scssFolder : path.join( __dirname, 'public/scss' )
 };
 
 module.exports = {
@@ -31,8 +25,7 @@ module.exports = {
 	cache        : true,
 	entry        : {
 		vendor: [
-			PATHS.bower + 'ionic/js/ionic.bundle',
-			PATHS.bower + 'angular-animate/angular-animate'
+			PATHS.bower + 'ionic/js/ionic.bundle'
 		],
 		app   : ['./app/bootstrap.js']
 	},
@@ -125,8 +118,6 @@ module.exports = {
 		PATHS.nodeModules + '/angular',
 		PATHS.nodeModules + '/angular-ui-router',
 		PATHS.nodeModules + '/angular-animate',
-		PATHS.nodeModules + '/angular-messages',
-		PATHS.nodeModules + '/angular-cookies',
 		PATHS.nodeModules + '/angular-sanitize'
 	],
 	resolveLoader: {

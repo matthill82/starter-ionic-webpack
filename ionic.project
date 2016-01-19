@@ -1,5 +1,5 @@
 {
-  "name": "starter-webpack",
+  "name": "starter-webpack-sidemenu",
   "app_id": "",
   "gulpStartupTasks": [
     "watch"
