@@ -1,7 +1,5 @@
 "use strict";
 
-import angular from "angular";
-
 class Words {
   constructor($http) {
     this.$http = $http;
@@ -12,8 +10,10 @@ class Words {
   }
 }
 
-Words.$inject = ["$http"];
+let moduleName = "services.words";
 
-export default angular.module("services.words", [])
-  .service("words", Words)
-  .name;
+angular.module(moduleName, [])
+	.service("words", Words);
+
+Words.$inject = ["$http"];
+export default moduleName;

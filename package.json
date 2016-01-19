@@ -13,7 +13,7 @@
     "es6-test": "node node_modules/eslint/bin/eslint.js -c .eslintrc ./app",
     "js-test": "node node_modules/jshint/dist/jshint.js --verbose ./app",
     "style-docs": "rm -rf ./docs && cp ./app/STYLE.md ./www/index.md && hologram",
-    "js-docs": "rm -rf ./docs && node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
+    "js-docs": "rm -rf ./docs && node_modules/.bin/jsdoc --configure jsdoc.json --verbose"
   },
   "devDependencies": {
     "bower": "^1.7.0",

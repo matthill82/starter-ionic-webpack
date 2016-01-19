@@ -1,6 +1,6 @@
 {
   "name": "starter-webpack-sidemenu",
-  "version": "0.0.1",
+  "version": "1.1.1",
   "dependencies": {
     "ionic" : "driftyco/ionic-bower#1.2.4"
   },

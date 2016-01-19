@@ -7,6 +7,7 @@ function HomeController () {
 	var vm = this;
 
 	vm.navTitle = "Saved Sketches";
+	vm.tester = "this is a test string";
 
 	vm.shouldShowDelete = false;
 	vm.shouldShowReorder = false;

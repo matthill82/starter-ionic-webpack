@@ -74,7 +74,7 @@ gulp.task('hologram', function() {
 		.pipe(hologram({logging:true}));
 });
 
-gulp.task('ngdocs', [], function () {
+gulp.task('ng-docs', [], function () {
 	var gulpDocs = require('gulp-ngdocs');
 	return gulp.src('./app/bootstrap.js')
 		.pipe(gulpDocs.process())
@@ -82,5 +82,5 @@ gulp.task('ngdocs', [], function () {
 });
 
 gulp.task('install', ['webpack']);
-gulp.task('watch', ['webpack-dev-server', 'hologram']);
+gulp.task('watch', ['webpack-dev-server', 'hologram', 'ng-docs']);
 gulp.task('default', ['install']);

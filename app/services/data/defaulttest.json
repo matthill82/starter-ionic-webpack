@@ -1,0 +1,356 @@
+{
+		"stands" : [
+			{
+				"id" : 0,
+				"name" : "Learning @ Ford Café",
+				"description" : "Want to find out more about resources for learning in Ford IT? Come along and enjoy a cup of tea or coffee while you browse the stand. Refreshments are free but you are kindly invited to make a donation to this year’s GLITS charity.",
+				"phone" : "734-1117",
+				"email" : "htovey1@ford.com",
+				"umbrella" : "End to End Effectiveness",
+				"picture" : "LearningFordCafe.jpg",
+				"icon" : "End-to-End-Effectiveness.png"
+			},
+			{
+				"id" : 1,
+				"name" : "IT S'n'C",
+				"description" : "This is a focus on Security & Controls presented with by playing some games, interactive quizzes and materials to provide advice and insight on both work and home. This will be a fun way to look at this subject and hopefully get people thinking that it can be enjoyable in Security & Controls.",
+				"phone" : "7343510",
+				"email" : "ghart3@ford.com",
+				"umbrella" : "Security and Compliance",
+				"picture" : "",
+				"icon" : "Security-&-Compliance.png"
+			},
+			{
+				"id" : 2,
+				"name" : "Ford Credit IT",
+				"description" : "FCE IT Stand with a few games/ competitions centred on 2-3 of the Big Six and general information about Ford Credit IT. Posters will be displayed as well as presentations rolling on 2 monitors.",
+				"phone" : "730-2558",
+				"email" : "vparmar4@ford.com",
+				"umbrella" : "Multiple",
+				"picture" : "",
+				"icon" : "Multiple.png"
+			},
+			{
+				"id" : 3,
+				"name" : "European Architecture",
+				"description" : "Come and learn what IT Architecture has to offer to the organisation as we transition from a project-based architecture to an enterprise architecture as part of the EA 2.0 initiative. We are also giving you the chance to test your coding skills on a programmable model car and race it around a lap of our track.",
+				"phone" : "8734-1447",
+				"email" : "ksenior2@ford.com",
+				"umbrella" : "Enterprise Architecture",
+				"picture" : "european-architecture.png",
+				"icon" : "Enterprise-Architecture.png"
+			},
+			{
+				"id" : 4,
+				"name" : "EU OCIO",
+				"description" : "The IT Operating Model is a holistic framework designed to align and map out everything we do, optimizing  IT for efficiency and leading to increased capacity and agility. Everyone in IT has a role to play in the IT Operating Model – our Job Families describe the roles and the associated responsibilities required to execute IT Processes and deliver IT Services. We will leverage the IT Operating Model to increase our End to End Effectiveness in delivering value to our IT and Business customers (One of the Big 6 initiatives). We’ll help to show ‘What Everyone in IT Needs to know’: What Services IT provides – their descriptions and how to access them using the Service Catalog. How to find Job Families and understand how they fit into the IT Operating model. What Processes are part of my job and the goals and objectives of each. We will show how the four recent change programs (AGILE AD, BEP, ITSM, and CPM2) are incorporated into the Operating Model.",
+				"phone" : "8-734-2735",
+				"email" : "dmerrel1@ford.com",
+				"umbrella" : "End to End Effectiveness",
+				"picture" : "",
+				"icon" : "End-to-End-Effectiveness.png"
+			},
+			{
+				"id" : 5,
+				"name" : "Application Performance Monitoring using “New Relic”",
+				"description" : "Demonstration on the use of the New Relic tool as an APM as used to monitor the eTIS application.",
+				"phone" : "8738-3707",
+				"email" : "sdowdin1@ford.com",
+				"umbrella" : "Innovation",
+				"picture" : "new-relic.jpg",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 6,
+				"name" : "Ford Etis/Odyssey",
+				"description" : "FordEtis is the Online Technical Information and Services website, which provides fast, online access to everything you need to know about servicing and repairing of Ford vehicles. Odyssey is a workflow manager with a giant translation cache, translating and publishing Owner Manuals, Workshop Manuals and Training Guides in over 35 languages.Visit our stand in order to understand how dealers are performing System Based Diagnostics on Ford vehicles and how we add value to the business through innovation.",
+				"phone" : "87384158",
+				"email" : "rshirkov@ford.com",
+				"umbrella" : "Innovation",
+				"picture" : "",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 7,
+				"name" : "Digital Worker",
+				"description" : "Come to the Digital worker stand and get information on how to promote collaboration, effectively work in a global organisation, manage your time effectively and so on! Get the best out of your digital capabilities and use your digital tools to the full extent!",
+				"phone" : "7341895",
+				"email" : "mmahima@ford.com",
+				"umbrella" : "End to End Effectiveness",
+				"picture" : "Digital-worker-BRING.jpg",
+				"icon" : "End-to-End-Effectiveness.png"
+			},
+			{
+				"id" : 8,
+				"name" : "BRING Iniative",
+				"description" : "Come to the Digital worker stand and get information on how to promote collaboration, effectively work in a global organisation, manage your time effectively and so on! Get the best out of your digital capabilities and use your digital tools to the full extent!",
+				"phone" : "87344428",
+				"email" : "cmaugha1@ford.com",
+				"umbrella" : "Culture",
+				"picture" : "Digital-worker-BRING.jpg",
+				"icon" : "Culture.png"
+			},
+			{
+				"id" : 9,
+				"name" : "Digital Creative",
+				"description" : "Visit our stand and find out about the team’s latest innovative projects! Virtual reality, augmented reality and gesture recognition are just some of the cool technologies that will be displayed. See our magic car, explore your Ford dealership on the spot and go on the most crazy rollercoaster ride of your life!",
+				"phone" : "87344428",
+				"email" : "mkell156@ford.com",
+				"umbrella" : "Innovation",
+				"picture" : "DigitalCreative.jpg",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 10,
+				"name" : "QCoE",
+				"description" : "Find out how QCoE support the Big Six. Find out what QCoE are doing in the areas of: Innovation, Mobility, Automation, Integration, Load and Performance, Knowledge management, Expertise, Collaboration, Metrics and Many more! Find out what it takes to be part of QCoE. Come along and play some fun games and find out how QCoE can help you!",
+				"phone" : "7091472",
+				"email" : "jpadda@ford.com",
+				"umbrella" : "End to End Effectiveness",
+				"picture" : "QCoE.jpg",
+				"icon" : "End-to-End-Effectiveness.png"
+			},
+			{
+				"id" : 11,
+				"name" : "So you think you are Agile?",
+				"description" : "So you think you are Agile!?! Find out how Agile you really are! Find out about the latest tools and new features coming soon! Learn more about the other Global Shared Service offerings and what we can do for you.",
+				"phone" : "87091292",
+				"email" : "plabross@ford.com",
+				"umbrella" : "Agile IT",
+				"picture" : "GSS-Logo.png",
+				"icon" : "Agile-IT.png"
+			},
+			{
+				"id" : 12,
+				"name" : "GLITS Bake Off",
+				"description" : "Why not try out your baking skills and enter the GLITS Bake OFF event this year!",
+				"phone" : "87252648",
+				"email" : "gbrow274@ford.com",
+				"umbrella" : "Multiple",
+				"picture" : "Bakeoff.png",
+				"icon" : "Multiple.png"
+			},
+			{
+				"id" : 13,
+				"name" : "Burrows",
+				"description" : "Visit our creative stand and see our exciting work!",
+				"phone" : "00441277246761",
+				"email" : "Dan.betts@burrows.yr.com",
+				"umbrella" : "Innovation",
+				"picture" : "burrows.png",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 14,
+				"name" : "Aurasma",
+				"description" : "A collection of Augmented Reality content powered by Aurasma including recent innovations, customer campaigns and more.",
+				"phone" : "00447557 758896",
+				"email" : "anthonyh@hp.com",
+				"umbrella" : "Innovation",
+				"picture" : "Aurasma.png",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 15,
+				"name" : "Siemens",
+				"description" : "SIEMENS Asset Analytics Siemens-SIEMENS OMNEO Big Data Analytics",
+				"phone" : "0049 (151) 14569467",
+				"email" : "olaf.bispomendes@siemens.com",
+				"umbrella" : "Innovation",
+				"picture" : "Siemens.jpg",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 16,
+				"name" : "Microsoft",
+				"description" : "Microsoft will give an overview on the megatrend „Internet of Things” and Industry 4.0 as a specific use case. Topics as energy management, predictive maintenance and optimization in production will be touched. Furthermore, new human machine interfaces for production, maintenance and planning (e.g. via Kinect and Hololens) will be described.",
+				"phone" : "+49151 5895 6145",
+				"email" : "frank.blankertz@microsoft.com",
+				"umbrella" : "Innovation",
+				"picture" : "MicrosoftLogo.jpg",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 17,
+				"name" : "TEBIS",
+				"description" : "New Version 4.0, Reverser Engineering, NC Automation Machine Simulation",
+				"phone" : "7809129045",
+				"email" : "Paul.Scally@tebisuk.co.uk",
+				"umbrella" : "Innovation",
+				"picture" : "tebis.png",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 18,
+				"name" : "Innovate Europe-Think local, think global, act",
+				"description" : "The booth will promote the upcoming Innovation Challenge in Europe, ask for input / thoughts from booth visitors on innovation enablers and what they would do “if they had more time for innovation”. We would also like to collect and display information around ‘Innovation’",
+				"phone" : "87341304",
+				"email" : "mcrabb@ford.com",
+				"umbrella" : "Innovation",
+				"picture" : "",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 19,
+				"name" : "Parkinson's UK",
+				"description" : "Support the UK's Parkinson's Charity.",
+				"phone" : "8734-1117",
+				"email" : "htovey1@ford.com",
+				"umbrella" : "Multiple",
+				"picture" : "ukparkinsons.jpg",
+				"icon" : "Multiple.png"
+			},
+			{
+				"id" : 20,
+				"name" : "BlueHive",
+				"description" : "Come and see the latest developments in the creative and digital world!",
+				"phone" : "TBA",
+				"email" : "TBA",
+				"umbrella" : "Innovation",
+				"picture" : "",
+				"icon" : "Innovation.png"
+			},
+			{
+				"id" : 21,
+				"name" : "IET",
+				"description" : "visit the Institue of Engineering and Technology stand!",
+				"phone" : "TBA",
+				"email" : "TBA",
+				"umbrella" : "Innovation",
+				"picture" : "",
+				"icon" : "Innovation.png"
+			},
+      {
+        "id" : 22,
+        "name" : "IET",
+        "description" : "Information on membership of the IET and becoming professionally registered as well as other IET, profession development based products and services",
+        "phone" : "07786 641505",
+        "email" : "lhanson@theiet.org",
+        "umbrella" : "Innovation",
+        "picture" : "IET.jpg",
+        "icon" : "Innovation.png"
+      }
+		],
+		"seminars" : [
+			{
+				"id" : "0",
+				"name" : "Achieving sustainability through a Bi-Modal approach (Fujitsu $ FMC)",
+				"lead" : "Paul Warburton, Kevin Timms",
+				"location": "VRC",
+				"time" : "09:00am-10:00am",
+				"description" : "Digital transformation in the Automotive market is more than just the connected vehicle. Those organisations who wish to succeed in the emergence of this technology-led sector need to fully embrace the agility needs of their clients. The Auto sector is at the eye of the storm relating to digital transformation and globalisation of their industry. They need to take a multi modal approach to the many challenges around the connected car, IOT, Integrated transport, and growth within new markets- What are some of the key considerations that need to be taken in developing a sustainable future…"
+			},
+			{
+				"id" : "1",
+				"name" : "Getting To Here – What’s In A Career? (FMC £ FCE)",
+				"lead" : "Kevin Timms, Jayne Miles",
+				"location": "VRC",
+				"time" : "10:00am-11:00am",
+				"description" : "A frank and open discussion on what makes for career success.  In this panel session, Jayne and Kevin will share their personal experiences about working in Ford IT, the challenges they’ve met, the roles they’ve enjoyed most, and the strangest things they’ve been asked to do.  This will be a relaxed and informal event with plenty of opportunity to ask questions and engage in conversation."
+			},
+			{
+				"id" : "2",
+				"name" : "Building a State-of-the-Art Consumer Web Experience (FMC)",
+				"lead" : "Sammy Elwardany",
+				"location": "GB-B13",
+				"time" : "10:00am-11:00am",
+				"description" : "A presentation to show what it takes and the steps involved to build the future Ford consumer website."
+			},
+			{
+				"id" : "3",
+				"name" : "Ford Configurator (FMC)",
+				"lead" : "Tony Wise",
+				"location": "1B-B13",
+				"time" : "10:00am-11:00am",
+				"description" : "Overview of the Configurator systems driving our product data onto our consumer websites in Europe – past, present and future"
+			},
+			{
+				"id" : "4",
+				"name" : "Ford’s Joint Ventures for EU and NA (FMC)",
+				"lead" : "Willi Mertens, Nancy Tang",
+				"location": "XA-01",
+				"time" : "10:00am-11:00am",
+				"description" : "TBA"
+			},
+			{
+				"id" : "5",
+				"name" : "Realising Innovation in Product Performance Intelligence with Big Data Analytics (Siemens)",
+				"lead" : "Nash Chakraborty",
+				"location": "VRC",
+				"time" : "11:00am-12:00pm",
+				"description" : "Product performance Intelligence is difficult to obtain in a complex global value chain. Data is disparate and often inaccessible, yet customers increasingly demand rapid resolution of product issues. In this presentation, the speaker will address technology lattices such as big data, cloud technology and the internet of things, fueling a digital transformation impacting how products are developed, manufactured and used."
+			},
+			{
+				"id" : "6",
+				"name" : "Ford Smart Mobility (FMC)",
+				"lead" : "Will Farrelly",
+				"location": "GB-B13",
+				"time" : "11:00am-12:00pm",
+				"description" : "An overview of the Ford Smart Mobility initiative, inc. global consumer trends, new technologies, and business strategy"
+			},
+			{
+				"id" : "7",
+				"name" : "Upside-down Flowers, Spinning Wheels and the Big 6(FMC)",
+				"lead" : "Tim Jones & Katy Senior",
+				"location": "1B-B13",
+				"time" : "11:00am-11:30am",
+				"description" : "The purpose of this presentation is to explain the meaning of the mysterious Enterprise Architecture 2.0 logo, where Enterprise Architecture fits in,  who does what and who to talk to if you need help"
+			},
+			{
+				"id" : "8",
+				"name" : "The European Legislative Roadmap – Its business Impact (FMC Agency)",
+				"lead" : "Mavis Cournane",
+				"location": "1B-B13",
+				"time" : "11:30am-12:00pm",
+				"description" : "What European Legislation is in the pipeline, what is behind it, and what will it mean for Ford Motor Company"
+			},
+			{
+				"id" : "9",
+				"name" : "Using modelling tools and systems thinking to enhance analysis and decision making (Retired FMC)",
+				"lead" : "Bob Hawkins",
+				"location": "XA-01",
+				"time" : "11:00am-12:00pm",
+				"description" : "Using the climate change scenario to show how modelling tools and systems thinking/system dynamics can greatly enhance analysis and decision-making."
+			},
+			{
+				"id" : "10",
+				"name" : "Data Management 101 (FMC, ind. consultant)",
+				"lead" : "Lee Edwards, Chris Bradley",
+				"location": "VRC",
+				"time" : "12:00-1:00pm",
+				"description" : "There is a lot of discussion on Big Data, the power of Analytics and how insights can help us, however how do we know what we are looking at? Numbers without understanding are just numbers. The session will provide a primer on Data Management covering What Data Management is What Data Management isn’t Why it’s essential View from the outside world Views on current state within Ford Motor Company Questions you should ask in your day job Further learning opportunities"
+			},
+			{
+				"id" : "11",
+				"name" : "IT Connect (FMC)",
+				"lead" : "Marcy Klevorn",
+				"location": "VRC",
+				"time" : "1:00pm-2:00pm",
+				"description" : "N/A"
+			},
+			{
+				"id" : "12",
+				"name" : "Realise your Digital Strategy, an Agile Factory Approach (IBM)",
+				"lead" : "Hans Bracke",
+				"location": "VRC",
+				"time" : "2:00pm-3:00 pm",
+				"description" : "Organisations are challenged to innovate and deliver new services fast, keep up with new technologies and respond to customer feedback. At the same time organisations have to ensure the business' Systems of Record remain compliant and risks to the business are limited. To achieve this balancing act collaborative and responsive practices are required, founded on a harmony of people, platforms and approach."
+			},
+			{
+				"id" : "13",
+				"name" : "Business Transformation for Enterprises (IBM, Apple)",
+				"lead" : "Hans Bracke, Mike Pulley",
+				"location": "VRC",
+				"time" : "3:00pm-4:00pm",
+				"description" : "Apple and IBM are redefining the mobile enterprise by combining the exponential power of corporate data with the world’s best mobile technology. This exclusive global partnership is delivering a new generation of apps and services called MobileFirst for iOS.  The presentation will cover the approach, what makes it distinct and the value it provides to large enterprises."
+			},
+			{
+				"id" : 14,
+				"name" : "Microsoft",
+				"description" : "Microsoft will give an overview on the megatrend „Internet of Things” and Industry 4.0 as a specific use case. Topics as energy management, predictive maintenance and optimization in production will be touched. Furthermore, new human machine interfaces for production, maintenance and planning (e.g. via Kinect and Hololens) will be described.",
+				"lead" : "Frank Blankertz",
+				"location": "showroom",
+				"time" : "10.00am-11.00am"
+			}
+		]
+}
