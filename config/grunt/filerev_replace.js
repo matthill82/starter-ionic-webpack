@@ -2,57 +2,57 @@ module.exports = function (grunt, options) {
     return {
         css: {
             options: {
-                assets_root: 'dist/'
+                assets_root: 'www/'
             },
-            src: 'dist/assets/css/*.css'
+            src: 'www/css/*.css'
         },
         html: {
             options: {
-                assets_root: 'dist/'
+                assets_root: 'www/'
             },
-            src: 'dist/*.html'
+            src: 'www/*.html'
         },
         about: {
             options: {
-                assets_root: 'dist/about-us/'
+                assets_root: 'www/about-us/'
             },
-            src: 'dist/about-us/*.html'
+            src: 'www/about-us/*.html'
         },
         terms: {
             options: {
-                assets_root: 'dist/terms/'
+                assets_root: 'www/terms/'
             },
-            src: 'dist/terms/*.html'
+            src: 'www/terms/*.html'
         },
         jobs: {
             options: {
-                assets_root: 'dist/jobs/'
+                assets_root: 'www/jobs/'
             },
-            src: 'dist/jobs/*.html'
+            src: 'www/jobs/*.html'
         },
         blog: {
             options: {
-                assets_root: 'dist/blog/'
+                assets_root: 'www/blog/'
             },
-            src: 'dist/blog/*.html'
+            src: 'www/blog/*.html'
         },
         calculator: {
             options: {
-                assets_root: 'dist/savings-calculator/'
+                assets_root: 'www/savings-calculator/'
             },
-            src: 'dist/savings-calculator//*.html'
+            src: 'www/savings-calculator//*.html'
         },
         getintouch: {
             options: {
-                assets_root: 'dist/get-in-touch/'
+                assets_root: 'www/get-in-touch/'
             },
-            src: 'dist/get-in-touch/*.html'
+            src: 'www/get-in-touch/*.html'
         },
         privacy: {
             options: {
-                assets_root: 'dist/privacy-policy/'
+                assets_root: 'www/privacy-policy/'
             },
-            src: 'dist/privacy-policy/*.html'
+            src: 'www/privacy-policy/*.html'
         }
     }
 };

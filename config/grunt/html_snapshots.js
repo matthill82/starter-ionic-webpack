@@ -21,7 +21,7 @@ module.exports = {
     // the release target
     release: {
         options: {
-            outputDir: "./dist"
+            outputDir: "./www"
         }
     }
 

@@ -1,10 +1,10 @@
 module.exports = {
     usemin: {
-        src: 'app/index.html', dest: 'dist/index.html'
+        src: 'app/index.html', dest: 'www/index.html'
     },
     root_assets: {
         files: [
-            {expand: true, cwd: 'public/', src: ['*.*'], dest: 'dist'}
+            {expand: true, cwd: 'public/', src: ['*.*'], dest: 'www'}
         ]
     },
     calculator: {
@@ -13,7 +13,7 @@ module.exports = {
                 expand: true,
                 cwd: 'public/',
                 src: ['calculator/**'],
-                dest: 'dist/assets/'
+                dest: 'www/'
             }
         ]
     },
@@ -23,7 +23,7 @@ module.exports = {
                 expand: true,
                 cwd: 'public/',
                 src: ['images/**'],
-                dest: 'dist/assets/'
+                dest: 'www/'
             }
         ]
     },
@@ -33,7 +33,7 @@ module.exports = {
                 expand: true,
                 cwd: 'public/',
                 src: ['kayako/**'],
-                dest: 'dist/assets/'
+                dest: 'www/'
             }
         ]
     },
@@ -43,7 +43,7 @@ module.exports = {
                 expand: true,
                 cwd: 'public/',
                 src: ['apple-touch/**'],
-                dest: 'dist/assets/'
+                dest: 'www/'
             }
         ]
     },
@@ -53,7 +53,7 @@ module.exports = {
                 expand: true,
                 cwd: 'public/',
                 src: ['svg/**'],
-                dest: 'dist/assets/'
+                dest: 'www/'
             }
         ]
     },
@@ -63,7 +63,7 @@ module.exports = {
                 expand: true,
                 cwd: 'public/',
                 src: ['fonts/**', 'fonts/.htaccess'],
-                dest: 'dist/assets/'
+                dest: 'www/'
             }
         ]
     },
@@ -73,7 +73,7 @@ module.exports = {
                 expand: true,
                 cwd: 'public/vendor',
                 src: ['kissmetrics/**'],
-                dest: 'dist/assets/'
+                dest: 'www/'
             }
         ]
     },
@@ -83,14 +83,14 @@ module.exports = {
                 expand: true,
                 cwd: 'app/components/',
                 src: ['**/**.html'],
-                dest: 'dist/partials/',
+                dest: 'www/partials/',
                 flatten: true
             },
             {
                 expand: true,
                 cwd: 'app/states/',
                 src: ['**/**.html'],
-                dest: 'dist/views/',
+                dest: 'www/views/',
                 flatten: true
             }
         ]

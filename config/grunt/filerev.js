@@ -9,15 +9,15 @@ module.exports = function (grunt, options) {
         prodPre: {
             files: [{
                 src: [
-                    'dist/assets/images/**/*.{jpg,jpeg,gif,png,webp}'
+                    'www/images/**/*.{jpg,jpeg,gif,png,webp}'
                 ]
             }]
         },
         prodPost: {
             files: [{
                 src: [
-                    'dist/assets/js/*.js',
-                    'dist/assets/css/*.css'
+                    'www/js/*.js',
+                    'www/css/*.css'
                 ]
             }]
         }

@@ -9,9 +9,9 @@ module.exports = function (grunt, options) {
         },
         html: {
             src: [
-                'dist/index.html',
-                'dist/partials/*.html',
-                'dist/views/*.html'
+                'www/index.html',
+                'www/partials/*.html',
+                'www/views/*.html'
             ]
         }
     }

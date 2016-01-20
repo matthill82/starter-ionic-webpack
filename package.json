@@ -1,19 +1,23 @@
 {
   "name": "WebPackSideMenu",
+  "author" : "Matthew Hill",
   "version": "1.1.1",
   "description": "starter webpack sidemenu app",
   "main" : "app.module.js",
   "scripts": {
-    "install" : "./node_modules/.bin/bower install && ./node_modules/.bin/gulp",
     "start": "env UV_THREADPOOL_SIZE=100 webpack --progress --colors --watch",
-    "analyse": "env webpack-dev-server --progress --colors --watch --display-modules --display-chunks --display-reasons --release=dev",
-    "dev": "NODE_ENV=dev webpack-dev-server --content-base www/ --inline --release=dev",
-    "stage": "NODE_ENV=stage webpack-dev-server --progress --colors --release=stage",
-    "prod":  "NODE_ENV=production webpack-dev-server --progress --colors --release=production",
+    "analyse": "env UV_THREADPOOL_SIZE=100 webpack-dev-server --progress --colors --watch --display-modules --display-chunks --display-reasons --release=dev",
+    "dev": "env UV_THREADPOOL_SIZE=100 webpack-dev-server --content-base www/ --inline --release=dev",
+    "stage": "env UV_THREADPOOL_SIZE=100 webpack-dev-server --progress --colors --release=stage",
+    "prod":  "env UV_THREADPOOL_SIZE=100 webpack-dev-server --progress --colors --release=production",
     "es6-test": "node node_modules/eslint/bin/eslint.js -c .eslintrc ./app",
     "js-test": "node node_modules/jshint/dist/jshint.js --verbose ./app",
     "style-docs": "rm -rf ./docs && cp ./app/STYLE.md ./www/index.md && hologram",
     "js-docs": "rm -rf ./docs && node_modules/.bin/jsdoc --configure jsdoc.json --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthill82/starter-webpack-sidemenu.git"
   },
   "devDependencies": {
     "bower": "^1.7.0",
