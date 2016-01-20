@@ -1,9 +1,9 @@
 "use strict";
 
 /** Load import Modules. */
-import { default as homeModule } from "./features/home/home.module";
-import { default as formsModule } from "./features/forms/form.module";
-import { default as photosModule } from "./features/photos/photo.module.js";
+import { default as homeModule } from "states/home/home.module";
+import { default as formsModule } from "states/forms/form.module";
+import { default as photosModule } from "states/photos/photo.module.js";
 
 /** Load app routes */
 import appRoutes from "./core/app.routes";
