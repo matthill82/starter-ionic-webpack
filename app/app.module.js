@@ -5,6 +5,9 @@ import { default as homeModule } from "states/home/home.module";
 import { default as formsModule } from "states/forms/form.module";
 import { default as photosModule } from "states/photos/photo.module.js";
 
+/** Load custom components **/
+import { default as backButton } from './components/backbutton/backButton.directive';
+
 /** Load app routes */
 import appRoutes from "./core/app.routes";
 
