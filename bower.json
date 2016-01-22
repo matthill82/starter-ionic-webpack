@@ -4,7 +4,6 @@
   "dependencies": {
     "ionic" : "driftyco/ionic-bower#1.2.4"
   },
-  "devDependencies": {},
   "ignore": [
     "**/.*",
     "node_modules",

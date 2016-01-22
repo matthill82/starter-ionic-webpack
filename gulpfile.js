@@ -4,8 +4,9 @@
 /**
  * Module dependencies
  */
-var gulp           = require('gulp'),
+var gulp             = require('gulp'),
     gutil            = require('gulp-util'),
+    sass             = require('gulp-sass'),
     path             = require('path'),
     del              = require('del'),
     open             = require('open'),
@@ -81,6 +82,32 @@ gulp.task('ng-docs', [], function () {
 		.pipe(gulp.dest('./docs/ngdocs'));
 });
 
+gulp.task('styleguide:generate', function() {
+	return gulp.src('./app/*.scss')
+		.pipe(styleguide.generate({
+			title: 'My Styleguide',
+			server: true,
+			rootPath: outputPath,
+			overviewPath: 'README.md'
+		}))
+		.pipe(gulp.dest(outputPath));
+});
+
+gulp.task('styleguide:applystyles', function() {
+	return gulp.src('./app/app.scss')
+		.pipe(sass({
+			errLogToConsole: true
+		}))
+		.pipe(styleguide.applyStyles())
+		.pipe(gulp.dest(outputPath));
+});
+
+
 gulp.task('install', ['webpack']);
-gulp.task('watch', ['webpack-dev-server', 'hologram', 'ng-docs']);
+gulp.task('watch', ['webpack-dev-server', 'ng-docs', 'styleguide'], function () {
+	// Start watching changes and update styleguide whenever changes are detected
+	// Styleguide automatically detects existing server instance
+	gulp.watch(['*.scss'], ['styleguide']);
+});
+gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 gulp.task('default', ['install']);
