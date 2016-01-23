@@ -104,7 +104,7 @@ gulp.task('styleguide:applystyles', function() {
 
 
 gulp.task('install', ['webpack']);
-gulp.task('watch', ['webpack-dev-server', 'ng-docs', 'styleguide'], function () {
+gulp.task('watch', ['webpack-dev-server', 'ng-docs'], function () {
 	// Start watching changes and update styleguide whenever changes are detected
 	// Styleguide automatically detects existing server instance
 	gulp.watch(['*.scss'], ['styleguide']);
