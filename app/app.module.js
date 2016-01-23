@@ -6,7 +6,7 @@ import { default as formsModule } from "states/forms/form.module";
 import { default as photosModule } from "states/photos/photo.module.js";
 
 /** Load custom components **/
-import { default as backButton } from './components/backbutton/backButton.directive';
+import { default as backButton } from "./components/backbutton/backButton.directive";
 
 /** Load app routes */
 import appRoutes from "./core/app.routes";
@@ -27,7 +27,8 @@ angular.module(moduleName, [
 	"ionic",
 	homeModule,
 	formsModule,
-	photosModule
+	photosModule,
+	backButton
 ])
 	/** Define default routes of the app */
 	.config( appRoutes )
