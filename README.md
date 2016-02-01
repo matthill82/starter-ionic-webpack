@@ -62,6 +62,15 @@ Then update webpackage.config
     
 ```
 
+Run unit tests
+```bash
+$ npm run js-test
+```
+
+Running unit test, code syntax validation
+```bash
+$ npm run analyse
+```
 
 
 
